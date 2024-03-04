@@ -1,0 +1,147 @@
+*{
+    margin: e;
+    padding: 0;
+    font-family:'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(sky2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color : #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #1d21d4;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.main_text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.main_text hl{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.main_text h1 span{
+    color:#1d21d4;
+}
+
+#about{
+    padding: 80px e;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-l{
+    flex-basis: 35%;
+}
+.about-col-l img{
+    width :100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis:60%;
+}
+.title2{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+#projects{
+    padding: 30px 0;
+}
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.projects-list div{
+    background: #222222;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.projects-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.projects-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.projects-list div:hover{
+    background: #1d21d4;
+    transform: translateY(-1Øpx);
+}
+.new{
+    padding:auto;
+}
+#contact{
+    background: #222222;
+    padding: 40px;
+    font-size: 25px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+u{
+    text-decoration: underline;
+    text-decoration-color: #1d21d4;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #222222;
+    font-weight: 300;
+    margin-top: 20px;
+}
